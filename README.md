@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 100 Questions App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
+このアプリケーションは、自己紹介やアイスブレイクの際に使用できる100個の質問を提供するシンプルなWebアプリケーションです。カジュアルな場面で、会話のきっかけ作りや自己紹介の補助ツールとして活用できます。
 
-Currently, two official plugins are available:
+## 機能
+- 100個の質問からランダムに質問を選択
+- 質問を手動で選択可能
+- シンプルで使いやすいUI
+- レスポンシブデザイン
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 技術スタック
+- React
+- TypeScript
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 開発環境のセットアップ
+1. リポジトリのクローン
+```bash
+git clone [リポジトリURL]
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. 依存関係のインストール
+```bash
+npm install
 ```
+
+3. 開発サーバーの起動
+```bash
+npm run dev
+```
+
+## 使い方
+1. アプリケーションを起動
+2. 「ランダム質問」ボタンをクリックして質問を表示
+3. または、質問リストから手動で質問を選択
+
